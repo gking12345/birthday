@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Page Website</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <nav>
+        <a href="#cover">Notebook Cover</a>
+        <a href="#game">Word Game</a>
+        <a href="#bts">BTS Birthday</a>
+    </nav>
+    <div class="page" id="cover">
+        <h1>Notebook Cover</h1>
+        <div class="notebook-cover">Notebook</div>
+    </div>
+    <div class="page" id="game">
+        <h1>Word Game</h1>
+        <div class="puzzle-container" id="puzzle-container"></div>
+        <div class="word-list-container">
+            <h2>Words to Find:</h2>
+            <ul id="word-list"></ul>
+        </div>
+        <button id="checkButton">Check Words</button>
+    </div>
+    <div class="page" id="bts">
+ <img src="bts.jpg">
+    <style>
+body {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

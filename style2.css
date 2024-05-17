@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.page {
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.page:target {
+    display: block;
+}
+
+.notebook-cover {
+    width: 200px;
+    height: 300px;
+    margin: 0 auto;
+    background: tan;
+    border: 2px solid brown;
+    line-height: 300px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 2px;
+    margin: 20px auto;
+}
+
+.puzzle-container div {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #ffeb3b;
+}
+
+.found {
+    background-color: #8bc34a;
+    color: white;
+}
+
+.word-list-container {
+    margin-top: 20px;
+}
+
+#checkButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.bts-collage {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
